@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function Library</title>
+        <script src="utilities.js"></script>
+    </head>
+    <body>
+        <h1> Function Library Test</h1>
+        <script>
+            console.log(typeof calculateCircumference); // Should log "function"
+
+            if (typeof calculateCircumference === 'function') { 
+                const radius = 10; 
+                console.log(`The circumference of a circle with radius ${radius} is ${calculateCircumference(radius)}`); 
+            } else { 
+                console.error('calculateCircumference is not defined'); }
+        </script>
+    </body>
+</html>
+  
